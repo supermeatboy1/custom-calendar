@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    tools:context=".AddEventActivity">
+
+    <TextView
+        android:id="@+id/textViewAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add event"
+        android:textSize="34sp"
+        android:gravity="center" />
+
+    <TimePicker
+        android:id="@+id/timePickerAddEvent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddEvent"
+        />
+
+    <Button
+        android:id="@+id/buttonAddEventCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/timePickerAddEvent"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonAddEventAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add"
+        app:layout_constraintLeft_toRightOf="@id/buttonAddEventCancel"
+        app:layout_constraintTop_toBottomOf="@id/timePickerAddEvent" />
+</android.support.constraint.ConstraintLayout>
